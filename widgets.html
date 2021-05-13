@@ -71,20 +71,53 @@
 
           
             <div class="flex-item flex-column">
-              <h2 class="add-top-margin">Project 3 Interpretable machine learning: partial dependence</h2>
+              <h2 class="add-top-margin">Project 3 Interpretable/explainable machine learning: partial dependence plot</h2>
               <hr>
+              <p class="text add-top-margin">
+                The partial dependence plot (short PDP or PD plot) shows the marginal effect one or two features 
+                have on the predicted outcome of a machine learning model. A partial dependence plot can show 
+                whether the relationship between the target and a feature is linear, monotonic or more complex.
+                The partial dependence plot is a global method: The method considers all instances and gives a 
+                statement about the global relationship of a feature with the predicted outcome.
+                
+                In this project, we implement the calculation of partial dependence for categorical features.
+                For categorical features, the partial dependence is very easy to calculate. For each of the 
+                categories, we get a PDP estimate by forcing all data instances to have the same category.
+                Details of the implementation will be shown subsequently.
+              </p>
             </div>
 
           
             <div class="flex-item flex-column">
               <h2 class="add-top-margin">Project 4 Credit risk analysis</h2>
               <hr>
+              <p class="text add-top-margin">
+                The objective of this project is to build a model which can predict if a customer's credit account is risky or not
+                based on customer's demographic information (age, gender etc.) and transation history with the bank.
+                The working precess includes: (1) data cleaning (fill in missing values, handle outlier), (2) Exploratory data analysis (Pearson correlation),
+                (3) Feature engineering (use PCA to extract features), (4) Models training (logistic regression, random forest,
+                adaboost, gradient boosting), (5) Model selection, (6) Save models/results.
+              </p>
             </div>
     
           
             <div class="flex-item flex-column">
               <h2 class="add-top-margin">Project 5 Faster training of bidirectional attention based language model </h2>
               <hr>
+              <p class="text add-top-margin">
+                In this project, we try to propose a novel bidirectional language model named window masking model. 
+                The proposed model is trained with a new learning objective named next token prediction based on 
+                the token preceding it. This method uses the text preceding the target word as input text to 
+                predict the target word, namely, the concatenation of embedding from attention layer where target word
+                is masked and embedding from previous residual input will be used to predict the target word. 
+                To learn the proposed objective, we devise a window masking operation and an next prediction 
+                mechanism inside the model based on the Transformer encoder. These components enable the proposed 
+                model to compute contextualized language representations at once while maintaining the advantages 
+                of the deep bidirectional architecture of language model.
+              </p>
+
+
+
             </div>             
           </div>
         <!-------------------------------------------------------------------------------------------->
